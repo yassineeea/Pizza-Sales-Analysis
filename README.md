@@ -37,7 +37,7 @@
   <h3 align="center">Pizza Sales analysis</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Comprehensive analysis of pizza sales data, driven by interactive visualizations and insights
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
