@@ -101,14 +101,16 @@ Use the `BLANK_README.md` to get started.
 
 
 ### Built With
+To navigate the data analyst job market, I enlisted a powerful toolkit:
 
-### Built With
+- **[![SQL][SQL-badge]][SQL-url]** served as the foundation, enabling me to explore and clean database to extract valuable insights.
+- **[![Microsoft SQL Server Management Studio][SSMS-badge]][SSMS-url]** Provided a familiar environment for database interaction and executing SQL queries.
+- **[![Power BI][PowerBI-badge]][PowerBI-url]** Utilized for creating interactive dashboards.
+- **[![Git][Git-badge]][Git-url] [![GitHub][GitHub-badge]][GitHub-url]** ensured seamless version control and collaboration by allowing me to track changes and share my SQL scripts and analysis.
 
-* [![SQL][SQL-badge]][SQL-url]
-* [![Jupyter Notebook][Jupyter-badge]][Jupyter-url]
-* [![Microsoft SQL Server Management Studio][SSMS-badge]][SSMS-url]
-* [![Git][Git-badge]][Git-url]
-* [![GitHub][GitHub-badge]][GitHub-url]
+
+
+
 
 <!-- Badges and URLs -->
 [SQL-badge]: https://img.shields.io/badge/SQL-MySQL-orange
@@ -126,6 +128,8 @@ Use the `BLANK_README.md` to get started.
 [GitHub-badge]: https://img.shields.io/badge/GitHub-181717.svg?logo=github&logoColor=white
 [GitHub-url]: https://github.com/
 
+[PowerBI-badge]: https://img.shields.io/badge/Power%20BI-F2C811.svg?logo=power-bi&logoColor=black
+[PowerBI-url]: https://powerbi.microsoft.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
