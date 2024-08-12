@@ -18,12 +18,19 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<div align="center">
+  <a href="https://medium.com/@username">
+    <img src="https://img.shields.io/badge/Medium-Read%20Articles-brightgreen" alt="Medium" />
+  </a>
+  <a href="https://www.youtube.com/c/username">
+    <img src="https://img.shields.io/badge/YouTube-Subscribe%20Now-red" alt="YouTube" />
+  </a>
+    <a href="https://www.linkedin.com/in/username">
+    <img src="https://img.shields.io/badge/LinkedIn-Follow%20Me-blue" alt="LinkedIn" />
+  </a>
+
+</div>
+
 
 
 
@@ -273,6 +280,10 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/yassine-zamit/
+[medium-shield]: https://img.shields.io/badge/Medium-Read%20Articles-brightgreen
+[medium-url]: https://medium.com/@yassinezamit26
+[youtube-shield]: https://img.shields.io/badge/YouTube-Subscribe%20Now-red
+[youtube-url]: https://www.youtube.com/c/@automationworld8336
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
