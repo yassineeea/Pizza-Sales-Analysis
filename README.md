@@ -102,16 +102,30 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![SQL][SQL-badge]][SQL-url]
+* [![Jupyter Notebook][Jupyter-badge]][Jupyter-url]
+* [![Microsoft SQL Server Management Studio][SSMS-badge]][SSMS-url]
+* [![Git][Git-badge]][Git-url]
+* [![GitHub][GitHub-badge]][GitHub-url]
+
+<!-- Badges and URLs -->
+[SQL-badge]: https://img.shields.io/badge/SQL-MySQL-orange
+[SQL-url]: https://www.mysql.com/
+
+[Jupyter-badge]: https://img.shields.io/badge/Jupyter%20Notebook-F37626.svg?logo=jupyter&logoColor=white
+[Jupyter-url]: https://jupyter.org/
+
+[SSMS-badge]: https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white
+[SSMS-url]: https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms
+
+[Git-badge]: https://img.shields.io/badge/Git-F05032.svg?logo=git&logoColor=white
+[Git-url]: https://git-scm.com/
+
+[GitHub-badge]: https://img.shields.io/badge/GitHub-181717.svg?logo=github&logoColor=white
+[GitHub-url]: https://github.com/
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
