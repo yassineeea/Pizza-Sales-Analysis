@@ -19,13 +19,13 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 <div align="center">
-  <a href="https://medium.com/@username">
+  <a href="https://medium.com/@yassinezamit26">
     <img src="https://img.shields.io/badge/Medium-Read%20Articles-brightgreen" alt="Medium" />
   </a>
-  <a href="https://www.youtube.com/c/username">
+  <a href="https://www.youtube.com/c/@automationworld8336">
     <img src="https://img.shields.io/badge/YouTube-Subscribe%20Now-red" alt="YouTube" />
   </a>
-    <a href="https://www.linkedin.com/in/username">
+    <a href="https://www.linkedin.com/in/yassine-zamit/">
     <img src="https://img.shields.io/badge/LinkedIn-Follow%20Me-blue" alt="LinkedIn" />
   </a>
 
