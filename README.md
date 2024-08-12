@@ -39,7 +39,7 @@
   <p align="center">
     Comprehensive analysis of pizza sales data, driven by interactive visualizations and insights
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/yassineeea/Pizza-Sales-Analysis/KPIreport.dox"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
