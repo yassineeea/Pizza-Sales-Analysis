@@ -85,7 +85,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Project 📚
 
 
 [![Pizza Sales Analysis Screenshot](https://github.com/yassineeea/Pizza-Sales-Analysis/blob/main/Pizza%20Sales%20Images/PizzaDash.png)](https://example.com)
@@ -93,14 +93,14 @@
 
 The Pizza Sales Analysis project aimed to explore and understand sales trends, customer preferences, and performance across different pizza categories and sizes. By analyzing a comprehensive dataset of pizza sales, the project sought to uncover insights that could help optimize inventory management, improve marketing strategies, and enhance overall sales performance.
 
-#### Goals
-* Identify Top Performers: Determine which pizza categories and sizes contribute most to total revenue and orders.
-* Analyze Sales Trends: Understand the daily, weekly, and monthly trends in pizza orders to optimize supply chain and marketing efforts.
-* Customer Insights: Identify peak order times and high-demand periods to align business strategies accordingly.
+#### Goals 🎯
+* Identify Top Performers🥇: Determine which pizza categories and sizes contribute most to total revenue and orders.
+* Analyze Sales Trends📈: Understand the daily, weekly, and monthly trends in pizza orders to optimize supply chain and marketing efforts.
+* Customer Insights🕒: Identify peak order times and high-demand periods to align business strategies accordingly.
 
 
 
-### Built With
+### Built With ⛏️🧑🏽‍💻
 To navigate the data analyst job market, I enlisted a powerful toolkit:
 
 - **[![SQL][SQL-badge]][SQL-url]** served as the foundation, enabling me to explore and clean database to extract valuable insights.
@@ -136,54 +136,114 @@ To navigate the data analyst job market, I enlisted a powerful toolkit:
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Problem Statement 📝
+### 1. KPI requirements 📌
+We need to analyze key indicators for our pizza sales data to gain insights into our business performance. Specifically, we want to calculate the following metrics:
+- **Total Revenue:** The sum of the total price of all pizza orders.
+- **Average Order Value:** The average amount spent per order, calculated by dividing the total revenue by the total number of orders.
+- **Total Pizzas Sold:** The sum of the quantities of all pizzas sold.
+- **Total Orders:** The total number of orders placed.
+- **Average Pizzas Per Order:** The average number of pizzas sold per order, calculated by dividing the total number of pizzas sold by the total number of orders
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### 2. CHARTS REQUIREMENT 📊
 
-### Prerequisites
+We would like to visualize various aspects of our pizza sales data to gain insights and understand key trends. We have identified the following requirements for creating charts:
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+- **Daily Trend for Total Orders:** Create a bar chart that displays the daily trend of total orders over a specific time period. This chart will help us identify any patterns or fluctuations in order volumes on a daily basis.
 
-### Installation
+- **Monthly Trend for Total Orders:** Create a line chart that illustrates the hourly trend of total orders throughout the day. This chart will allow us to identify peak hours or periods of high order activity.
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+- **Percentage of Sales by Pizza Category:** Create a pie chart that shows the distribution of sales across different pizza categories. This chart will provide insights into the popularity of various pizza categories and their contribution to overall sales.
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Project Workflow 🚀
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
+### 1. Data Collection and Preparation 🗂️
+
+#### Data Source🌐: 
+
+#### Data Cleaning🧹:
+
+### 2. Data Analysis with SQL 🔍
+#### * Exploratory Data Analysis (EDA)🔎:
+I Performed initial data exploration using SQL queries to understand the distribution of data and identify any anomalies.
+#### * KPI Calculation📊:
+I Wrote SQL queries to calculate the required KPIs such as Total Revenue, Average Order Value, Total Pizzas Sold, Total Orders, and Average Pizzas Per Order.
+- **1. Total Revenue:** This query calculates the sum of the total price of all pizza orders.:
+```sql
+SELECT SUM(total_price)
+AS TotalPrice from pizza_sales;
+```
+- **2. Average Order Value:** This query calculates the average amount spent per order, calculated by dividing the total revenue by the total number of orders.
+```sql
+select SUM(total_price)/count(DISTINCT(order_id)) as AverageOrderValue 
+from pizza_sales;
+```
+- **3. Total Pizza Sold:** This query calculates the sum of the quantities of all pizzas sold.
+```sql
+SELECT SUM(quantity) as TotalPizzaSold 
+FROM pizza_sales;
+```
+- **4. Total Orders:** This query calculates the total number of orders placed.
+```sql
+SELECT count(distinct(order_id)) as TotalOrders 
+FROM pizza_sales;
+```
+- **5. Average Pizza Per Order :** This query calculates
+```sql
+select CAST(SUM(quantity) as decimal(10,2)) / CAST(count(distinct order_id) as decimal(10,2)) 
+as AveragePizzaPerOrder  
+from pizza_sales;
+```
+
+#### * Trend Analysis📈:
+I Used SQL to extract data for daily and monthly trends, enabling the creation of the necessary charts in Power BI.
+- **1. Daily Trend of orders :** This query calculates the total number of distinct orders for each day of the week. .
+```sql
+SELECT DATENAME(DW, order_date)  as order_date , count(distinct order_id) as totalorders     
+FROM pizza_sales 
+GROUP BY DATENAME(DW, order_date);
+```
+- **2. Monthly Trend of orders  :** This query calculates the total number of distinct orders for each month.
+```sql
+SELECT DATENAME(Month, order_date)  as order_date , count(distinct order_id) as totalorders     
+FROM pizza_sales 
+GROUP BY  DATENAME(Month, order_date);
+```
+- **3. Percentages of sales per category  :** This query calculatesThis query calculates the percentage of total sales for each pizza category.
+```sql
+SELECT pizza_category, SUM(total_price)*100 / (select SUM(total_price)
+FROM pizza_sales)  as TotalPrice 
+
+FROM pizza_sales
+GROUP BY pizza_category;
+```
+- **4. Top 5 pizzas by revenue   :** This query calculates the total revenue for the top 5 pizza names, ordered by revenue in descending order.
+```sql
+SELECT TOP 5 pizza_name, Sum(total_price) as TotalRevenue 
+FROM pizza_sales 
+GROUP BY pizza_name
+ORDER BY TotalRevenue DESC;
+```
+### 3. Data Visualization with Power BI 📊
+- **Dashboard Creation:** I Imported the processed data into Power BI to create interactive dashboards.
+  
+[![Pizza Sales Analysis Screenshot](https://github.com/yassineeea/Pizza-Sales-Analysis/blob/main/Pizza%20Sales%20Images/PizzaDash.png)](https://example.com)
+
+
+### 4. Business Insights and Reporting 🧠
+
+
+This query calculates the total number of patients and their average wait time:
+```sql
+SELECT SUM(Number_In) AS NumberOfPatients, AVG(Patient_WaitTime) AS AverageWaitTime
+FROM WaitingTime
+GROUP BY Number_In
+ORDER BY AverageWaitTime ASC;
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
