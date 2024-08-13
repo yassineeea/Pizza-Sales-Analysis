@@ -67,16 +67,38 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#Problem Statement">Problem Statement</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#KPI requirements">KPI requirements</a></li>
+        <li><a href="#CHARTS REQUIREMENT">CHARTS REQUIREMENT</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#Project Workflow">Project Workflow</a>
+      <ul>
+        <li><a href="#Data Collection and Preparation">Data Collection and Preparation</a></li>
+              <ul>
+                 <li><a href="#Data Source">Data Source</a></li>
+                 <li><a href="#Data Cleaning">Data Cleaning</a></li>
+              </ul>
+      </ul>
+      <ul>
+        <li><a href="#Data Analysis with SQL">Data Analysis with SQL</a></li>
+              <ul>
+                 <li><a href="#Exploratory Data Analysis (EDA)">Exploratory Data Analysis (EDA)</a></li>
+                 <li><a href="#KPI Calculation">KPI Calculation</a></li>
+                 <li><a href="#Trend Analysis">Trend Analysis</a></li>
+              </ul>
+      </ul>   
+      <ul>
+        <li><a href="#Data Visualization with Power BI">Data Visualization with Power BI</a></li>
+              <ul>
+                 <li><a href="#Dashboard Creation">Dashboard Creation</a></li>
+              </ul>
+      </ul> 
+      <ul>
+        <li><a href="#Business Insights and Reporting">Business Insights and Reporting</a></li>
+      </ul>         
+    </li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -135,7 +157,7 @@ To navigate the data analyst job market, I enlisted a powerful toolkit:
 
 
 
-<!-- GETTING STARTED -->
+<!-- Problem Statement -->
 ## Problem Statement 📝
 ### 1. KPI requirements 📌
 We need to analyze key indicators for our pizza sales data to gain insights into our business performance. Specifically, we want to calculate the following metrics:
@@ -228,83 +250,28 @@ GROUP BY pizza_name
 ORDER BY TotalRevenue DESC;
 ```
 ### 3. Data Visualization with Power BI 📊
-- **Dashboard Creation:** I Imported the processed data into Power BI to create interactive dashboards.
-  
+- **Dashboard Creation:** Leveraging Power BI, I transformed the processed data into interactive, insightful dashboards that provide a comprehensive view of pizza sales performance over time.  
 [![Pizza Sales Analysis Screenshot](https://github.com/yassineeea/Pizza-Sales-Analysis/blob/main/Pizza%20Sales%20Images/PizzaDash.png)](https://example.com)
+
+ 
+[![Pizza Sales Analysis Screenshot](https://github.com/yassineeea/Pizza-Sales-Analysis/blob/main/Pizza%20Sales%20Images/pizzadash2.png)](https://example.com)
 
 
 ### 4. Business Insights and Reporting 🧠
 
+- **Actionable Insights:** The visualized data provides actionable insights that can drive strategic decisions, such as optimizing inventory for the best-selling pizzas, revising marketing strategies for underperforming products, and adjusting pricing models based on customer demand patterns.
 
-This query calculates the total number of patients and their average wait time:
-```sql
-SELECT SUM(Number_In) AS NumberOfPatients, AVG(Patient_WaitTime) AS AverageWaitTime
-FROM WaitingTime
-GROUP BY Number_In
-ORDER BY AverageWaitTime ASC;
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Top contributors:
-
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
-</a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- **Performance Monitoring:** These dashboards enable continuous performance monitoring, allowing stakeholders to track progress against sales targets, identify potential issues early on, and respond swiftly to changes in market conditions.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Yassine Zamit - [linkedin-url]: https://linkedin.com/in/yassine-zamit/ - yassinezamit26@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/yassineeea/Pizza-Sales-Analysis](https://github.com/yassineeea/Pizza-Sales-Analysis)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -322,7 +289,6 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
